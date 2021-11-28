@@ -12,7 +12,7 @@ OR<br>
 2. then navigate to that folder by command: cd C:/LogValidator_CrediSuisse/LogValidator
 3. then run the program by command: mvn clean compile exec:java
  
-Note: JDK and Maven enviornment variables must be set in order to run the program
+Note: JDK and Maven enviornment variables must be set in order to run the program<br>
 *Sample Output*
 ![002](https://user-images.githubusercontent.com/65991579/143783526-5a4b8296-cf44-412a-9856-8a753f66d1ce.jpg)
 ![001](https://user-images.githubusercontent.com/65991579/143783527-7a405eaa-9563-4dc2-917e-d7fb494d9d8f.jpg)
