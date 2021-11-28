@@ -6,8 +6,8 @@ To run the program:
 4. Open the following package
    YourDownloadLocation/LogValidator/src/main/java/com/creditsuisse/LogValidator/
 5. Launch App.java file from eclipse
-6. Run the App.java file inside com.creditsuisse.LogValidator package 
-OR
+6. Run the App.java file inside com.creditsuisse.LogValidator package <br>
+OR<br>
 1. Open CMD and clone the repo with command : git clone https://github.com/SubhamAshok/LogValidator_CrediSuisse
 2. then navigate to that folder by command: cd C:/LogValidator_CrediSuisse/LogValidator
 3. then run the program by command: mvn clean compile exec:java
