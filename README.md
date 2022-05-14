@@ -1,4 +1,47 @@
-# LogValidator_CreditSuisse
+# Problem Statement
+
+## Requirements for this coding assessment 
+
+* Java 8
+* Use of any open-source library is allowed
+* Your program must use either the Gradle or Maven build system to resolve dependencies, build and test
+# Summary of task
+Our custom-build server logs different events to a file named logfile.txt. Every event has 2 entries in the file 
+ one entry when the event was started and another when the event was finished. The entries in the file 
+have no specific order (a finish event could occur before a start event for a given id)  
+Every line in the file is a JSON object containing the following event data:
+* id - the unique event identifier
+* state - whether the event was started or finished (can have values "STARTED" or "FINISHED"
+* timestamp - the timestamp of the event in milliseconds  
+  
+Application Server logs also have the following additional attributes:
+* type - type of log
+* host - hostname
+2
+Example contents of logfile.txt:
+![image](https://user-images.githubusercontent.com/65991579/168409028-990be305-f06d-42ea-8653-4cf5a8b89379.png)
+
+In the example above, the event scsmbstgrb duration is 1491377495216 - 1491377495213 = 3ms
+The longest event is scsmbstgrc (1491377495218 - 1491377495210 = 8ms)
+## The program should:
+* Take the path to logfile.txt as an input argument
+* Parse the contents of logfile.txt
+* Flag any long events that take longer than 4ms
+* Write the found event details to file-based HSQLDB (http://hsqldb.org/) in the working folder
+* The application should create a new table if necessary and store the following values:
+* Event id
+* Event duration
+* Type and Host if applicable
+* Alert (true if the event took longer than 4ms, otherwise false)
+## Additional points will be granted for:
+* Proper use of info and debug logging
+* Proper use of Object Oriented programming
+* Unit test coverage
+* Multi-threaded solution
+* Program that can handle very large files (gigabytes)
+## As stated above, submissions should be loaded onto Github
+
+# LogValidator- How to execute
 To run the program:
 1. simply click on code->download as zip
 2. extract the rar file
